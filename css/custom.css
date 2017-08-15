@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-   font-family: ;
+   font-family: Arial, Helvetica, sans-serif;
    font-size: 10px;
 }
 
@@ -27,6 +27,41 @@ body{
   color: ;
 }
 
+
+/* ----Footer --- */
+
 footer {
-    background-color: #f4f6f8;
+  background-color: #f4f6f8;
+  margin-top: 100px;
+  border: 1px solid black;
+   height: 200px;
+   color: 
+}
+
+.ftr-links ul {
+  list-style: none;
+  text-decoration: none;
+}
+
+.ftr-links a {
+  text-decoration: none;
+}
+
+.ftr-links p {
+  font-size: 12px;
+  color: #6d839a;
+  
+}
+
+a:hover .ftr-links p {
+  color: #c2cbd5;
+}
+
+.ftr-links h5 {
+  color: #6d839a;
+}
+
+.ftr-copy, .ftr-social, .ftr-company, .ftr-resources {
+  border: 1px solid black;
+  height: 200px;
 }
