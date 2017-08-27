@@ -22,12 +22,12 @@ p{
 }
 /* float all <li> in #navbar to right*/
 #navbar>li{
-  float: left;
+  float: right;
 }
 /*for all <a>*/
 #navbar li a{
   display: block;
-  height: 20px;
+  height: 40px;
   width:100px;
   padding: 10px;
   text-decoration: none;
