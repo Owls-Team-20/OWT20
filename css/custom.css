@@ -22,31 +22,35 @@ time, mark, audio, video {
 
 
 body{
-    margin: 0;
-    padding: 0;
-   font-family: Arial, Helvetica, sans-serif;
-   font-size: 10px;
-   background-color: #FBDA61;
-background-image: -webkit-linear-gradient(bottom left, #FBDA61 0%, #FF5ACD 100%);
-background-image: -o-linear-gradient(bottom left, #FBDA61 0%, #FF5ACD 100%);
-background-image: linear-gradient(to top right, #FBDA61 0%, #FF5ACD 100%);
-;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  background-color: #FBDA61;
+  background-image: -webkit-linear-gradient(bottom left, #FBDA61 0%, #FF5ACD 100%);
+  background-image: -o-linear-gradient(bottom left, #FBDA61 0%, #FF5ACD 100%);
+  background-image: linear-gradient(to top right, #FBDA61 0%, #FF5ACD 100%);
 }
+
 h1{
   color: white;
 }
+
 p{
   font-size: 18px;
   color: white;
 }
+
 /* for all ul in #navbar*/
 #navbar,
 #navbar ul{list-style: none;
 }
+
 /* float all <li> in #navbar to right*/
 #navbar>li{
   float: right;
 }
+
 /*for all <a>*/
 #navbar li a{
   display: block;
@@ -55,26 +59,83 @@ p{
   padding: 10px;
   text-decoration: none;
 }
+
 /*only for those <a> that are in the #navbar*/
 #navbar>li>a{
   background-color: ;
   color: ;
 }
 
+/* --- Waitlist Section --- */
 
-/* ----Footer --- */
+.container-2{
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+section {
+  height: 570px;
+  font-family: 'Questrial', Arial, Helvetica, sans-serif;
+  padding-top: 5%;
+  background: #67B26F;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #4ca2cd, #67B26F);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #4ca2cd, #67B26F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  text-align: center;
+  color: #fff;
+}
+
+.inner-title > h2 {
+  font-size: 50px;
+}
+
+.inner-title > p {
+  font-size: 25px;
+}
+
+.inner-title {
+  line-height: 30px;
+  margin-bottom: 40px;
+}
+
+.review {
+  margin: 5%;
+}
+
+form {
+font-size: 17px;
+font-weight: 300;
+}
+
+
+form label{
+  font-size: 17px;
+  font-weight: 300;
+  }
+
+
+.form-control {
+ width: 32%;
+ padding: 22px 13px;
+ margin-left: 35%;
+ margin-bottom: 10px;
+}
+
+
+/* --- Footer --- */
 
 footer {
   background-color: #f4f6f8;
-  margin-top: 100px;
-  border: 1px solid black;
-   height: 200px;
-   color:
+  height: 223px;  
+  padding-left: 70px;
+  padding-right: 70px;  
 }
 
 .ftr-links ul {
   list-style: none;
   text-decoration: none;
+  margin: 30px;
 }
 
 .ftr-links a {
@@ -82,9 +143,16 @@ footer {
 }
 
 .ftr-links p {
-  font-size: 12px;
+  font-size: 13px;
   color: #6d839a;
+}
 
+.ftr-copy  {
+  padding-top: 10px;
+} 
+
+.ftr-copy p {
+  color: #9a9a9a;
 }
 
 a:hover .ftr-links p {
@@ -92,10 +160,21 @@ a:hover .ftr-links p {
 }
 
 .ftr-links h5 {
-  color: #6d839a;
+  color: #71869c;
+  font-size: 18px;
 }
 
-.ftr-copy, .ftr-social, .ftr-company, .ftr-resources {
-  border: 1px solid black;
-  height: 200px;
+.ftr-social li {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  float: left;
+  padding: 10px;
 }
+
+.ftr-social a {
+  color: #6d839a;
+  display: inline-block;
+}
+
+
