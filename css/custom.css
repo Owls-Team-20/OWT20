@@ -79,6 +79,8 @@ p{
   padding-right: 15px;
 }
 
+
+
 section {
   height: 570px;
   font-family: 'Questrial', Arial, Helvetica, sans-serif;
@@ -201,4 +203,3 @@ a:hover .ftr-links p {
 #pac-input:focus {
   border-color: #4d90fe;
 }
-

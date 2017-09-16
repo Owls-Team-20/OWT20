@@ -56,7 +56,6 @@
 </div>
 </section>
 
-
 <!-- waiting list section start here -->
 <section>
 <div class="container-2">
@@ -82,7 +81,8 @@
 </div>
 </section>
 
-<h1>Donut Find Now</h1>
+<!--should we center "Donut Finder"?-->
+<h1>Donut Finder</h1>
 <input id="pac-input" class="controls" type="text" placeholder="Search Box">
 <div id="map"></div>
 
@@ -167,11 +167,9 @@
 <script>
   var map;
   var infoWindow;
-
   var request;
   var service;
   var markers = [];
-
   function initialize() {
     // Map options
     var center = new google.maps.LatLng(37.422, -122.084058);
@@ -180,34 +178,27 @@
       zoom: 10,
       mapTypeId: 'roadmap'
     });
-
     request = {
       location: center,
-      radius: 24140, 
+      radius: 24140,
       types: ['cafe']
     };
-
     // Create the search box and link it to the UI element.
     var input = document.getElementById('pac-input');
     var searchBox = new google.maps.places.SearchBox(input);
     map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
-
      // Bias the SearchBox results towards current map's viewport.
      map.addListener('bounds_changed', function() {
       searchBox.setBounds(map.getBounds());
     });
-    
 
     infoWindow = new google.maps.InfoWindow();
-
     service = new google.maps.places.PlacesService(map);
-    
-    service.nearbySearch(request, callback);
 
+    service.nearbySearch(request, callback);
     google.maps.event.addListener(map, 'rightclick', function(event){
       map.setCenter(event.latLng)
       clearResults(markers)
-
       var request = {
         location: event.latLng,
         radios: 24140,
@@ -216,7 +207,6 @@
         service.nearbySearch(request, callback);
     })
   }
-
   function callback(results, status) {
     if(status == google.maps.places.PlacesServiceStatus.OK){
       for (var i = 0; i < results.length; i++){
@@ -224,28 +214,24 @@
       }
     }
   }
-
   function createMarker(place) {
     var placeLoc = place.geometry.location;
     var marker = new google.maps.Marker({
       map: map,
       position: place.geometry.location
     });
-
     google.maps.event.addListener(marker, 'click', function(){
       infoWindow.setContent(place.name);
       infoWindow.open(map, this);
     });
     return marker;
   }
-
   function clearResults(markers) {
     for (var m in markers) {
        markers[m].setMap(null)
     }
      markers = []
   }
-
 </script>
 
 
