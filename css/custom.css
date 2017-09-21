@@ -212,7 +212,7 @@ a:hover .ftr-links p {
   display: inline-block;
   font-family: 'Roboto', Arial, sans-serif;
   font-size: 16px;
-  margin: 35px 7px 10px;
+  margin: 35px 7px 100px;
   max-width: 310px;
   min-width: 250px;
   position: relative;
@@ -283,4 +283,11 @@ a:hover .ftr-links p {
 body {
   background-color: white;
   text-align: center;
+}
+
+
+.about {
+  text-align: center;
+  padding: 10%;
+  font-size: 30px;
 }
